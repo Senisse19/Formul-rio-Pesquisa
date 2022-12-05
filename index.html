@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Formulário - FreeCodeCamp</title>
+</head>
+
+<body>
+    <header id="header">
+        <h1 id="title">Formulário de Pesquisa</h1>
+        <p id="description">Obrigado por colaborar preenchendo seus dados</p>
+    </header>
+
+    <main id="content">
+        <form action="#" id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Nome:</label> 
+                <input type="text" id="name" required placeholder="Insira seu nome"> 
+            </div>
+
+            <div class="form-group">
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" id="email" required placeholder="Insira seu email">
+            </div>
+
+            <div class="form-group">
+                <label for="number" id="number-label">Idade:</label>
+                <input type="number" id="number" min="1" max="100" placeholder="Idade">
+            </div>
+            
+            <div class="form-group">
+            <label for="cargo" id="dropdown-label">Qual seu cargo atual?</label>
+                <select name="cargo" id="dropdown">
+                    <option value="#">Selecione</option>
+                    <option value="frontend">Dev. Front-End</option>
+                    <option value="backend">Dev. Back-End</option>
+                    <option value="fullstack">Dev. Full-Stack</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p class="form-legend">Qual linguagem você tem interesse em aprender?</p>
+                <input type="radio" name="language" id="language" value="JAVA">
+                <label for="java">Java</label><br>
+
+                <input type="radio" name="language" id="language" value="JAVASCRIPT">
+                <label for="javascript">JavaScript</label><br>
+
+                <input type="radio" name="language" id="language" value="PYTHON">
+                <label for="python">Python</label><br>
+
+                <input type="radio" name="language" id="language" value="PHP">
+                <label for="php">PHP</label>
+            </div>
+
+            <div class="form-group">
+                <p class="form-legend">Quais Tecnologias você possui conhecimento?</p>
+                <input type="checkbox" name="tech1" id="tech" value="html">
+                <label for="">HTML</label><br>
+
+                <input type="checkbox" name="tech2" id="tech" value="css">
+                <label for="">CSS</label><br>
+
+                <input type="checkbox" name="tech3" id="tech" value="react">
+                <label for="">React.js</label><br>
+
+                <input type="checkbox" name="tech4" id="tech" value="node">
+                <label for="">Node.js</label><br>
+
+                <input type="checkbox" name="tech5" id="tech" value="vue">
+                <label for="">Vue.js</label><br> 
+
+                <input type="checkbox" name="other" id="tech" value="outro">
+                <label for="">Outro</label>
+            </div>
+
+            <div id="textarea-group">
+                <label for="comments">Deixe aqui sugestões para melhorar a página</label>
+                <textarea name="comments" id="comments" cols="30" rows="10" placeholder="Deixe sua sugestão aqui..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="submit" id="submit">
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

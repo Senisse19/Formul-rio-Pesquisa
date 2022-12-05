@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Montserrat&family=Outfit&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Montserrat';
+}
+
+body {
+    background: linear-gradient(90deg, rgba(102,97,191,1) 15%, rgba(94,94,200,1) 46%, rgba(72,140,154,1) 89%);
+    height: 100%;
+    width: 100%;
+    padding-bottom: 35px;
+}
+
+#header {
+    text-align: center;
+    margin: 35px auto;
+    color: #fff;
+}
+
+#title {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+#description {
+    margin: 10px 0;
+    letter-spacing: 1.5px;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+#content {
+    position: relative;
+}
+
+#survey-form {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid #000;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 0 auto;
+    max-width: 715px;
+    padding: 40px 35px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.form-group {
+    color: #fff;
+    width: 100%;
+}
+
+#name-label, 
+#email-label,
+#number-label,
+#dropdown-label {
+    display: flex;
+    padding: 10px 0;
+}
+
+#name,
+#email,
+#number,
+#dropdown {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+}
+
+.form-legend {
+    margin: 10px 0;
+}
+
+#language,
+#tech {
+    margin: 6px 0;
+}
+
+#textarea-group {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    gap: 10px;
+}
+
+#comments {
+    padding: 15px;
+    outline: none;
+    max-width: 100%;
+    max-height: 150px;
+    min-width: 100%;
+    min-height: 150px;
+}
+
+#submit {
+    width: 100%;
+    height: 45px;
+    background-color: #77bdbd;
+    border: none;
+    font-weight: 700;
+    color: #fff;
+}
